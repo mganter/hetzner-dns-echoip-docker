@@ -7,9 +7,8 @@ This tool updates a record on hetzner-dns to your own publicly addressable IP.
 ```bash
 docker run -d \
     -e HETZNER_DNS_TOKEN="<your-token>" \
-    -e ZONE_ID="<dns-zone-id>" \
-    -e RECORD_ID="<to-be-updated-record-id>" \
-    -e RECORD_NAME="<record-name>" \
+    -e IPV4_RECORD_ID="<ipv4-record-id>" \
+    -e IPV6_RECORD_ID="<ipv6-record-id>" \
     ghcr.io/mganter/hetzner-dns-echoip:latest
 ```
 
@@ -18,8 +17,7 @@ docker run -d \
 | Name              | Required | Description                                                                                            |
 |-------------------|----------|--------------------------------------------------------------------------------------------------------|
 | HETZNER_DNS_TOKEN | yes      | The token this script uses to interact with hetzner-dns                                                |
-| ZONE_ID           | yes      | The zone that your record resides in                                                                   |
-| RECORD_ID         | yes      | The record that should be updated                                                                      |
-| RECORD_NAME       | yes      | The name of your record. eg. 'nextcloud'.                                                              |
+| IPV4_RECORD_ID    | np       | The ipv4 record that should be updated                                                                 |
+| IPV6_RECORD_ID    | yes      | The ipv6 record that should be updated                                                                 |
 | ECHOIP_ENDPOINT   | no       | This overrides the default [echoip](https://github.com/mpolden/echoip) endpoint. (https://ifconfig.co) |
 
