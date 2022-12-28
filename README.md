@@ -1,6 +1,6 @@
 # hetzner-dns-echoip-docker
 
-This tool updates a record on hetzner-dns to your own ip.
+This tool updates a record on hetzner-dns to your own publicly addressable IP.
 
 ## How to use
 
