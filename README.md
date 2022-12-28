@@ -17,7 +17,7 @@ docker run -d \
 | Name              | Required | Description                                                                                            |
 |-------------------|----------|--------------------------------------------------------------------------------------------------------|
 | HETZNER_DNS_TOKEN | yes      | The token this script uses to interact with hetzner-dns                                                |
-| IPV4_RECORD_ID    | np       | The ipv4 record that should be updated                                                                 |
-| IPV6_RECORD_ID    | yes      | The ipv6 record that should be updated                                                                 |
+| IPV4_RECORD_ID    | no       | The ipv4 record that should be updated                                                                 |
+| IPV6_RECORD_ID    | no      | The ipv6 record that should be updated                                                                 |
 | ECHOIP_ENDPOINT   | no       | This overrides the default [echoip](https://github.com/mpolden/echoip) endpoint. (https://ifconfig.co) |
 
